@@ -41,10 +41,10 @@ namespace Mindrean_Denisa_Lab2.Data
             context.SaveChanges();
             var orders = new Order[]
             {
-                new Order{BookID=1,CustomerID=1050},
-                new Order{BookID=3,CustomerID=1045},
-                new Order{BookID=1,CustomerID=1045},
-                new Order{BookID=2,CustomerID=1050},
+                new Order{BookID=1,CustomerID=1050,OrderDate=DateTime.Parse("2021-10-22")},
+                new Order{BookID=3,CustomerID=1045,OrderDate=DateTime.Parse("2021-10-20")},
+                new Order{BookID=1,CustomerID=1045,OrderDate=DateTime.Parse("2021-09-20")},
+                new Order{BookID=2,CustomerID=1050,OrderDate=DateTime.Parse("2021-09-20")},
             };
             foreach (Order e in orders)
             {
